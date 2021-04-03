@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 15vh;
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  max-width: 980px;
+  padding: 0 1rem;
+  z-index: 10;
+  position: relative;
+}
+
+.buttonShare {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  float: right;
+}
+
+.buttonShareStyle {
+  background-color: darkgreen;
+  padding: 0.7rem 1rem;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+}
+
+.buttonShareStyle:hover {
+  background-color: rgb(1, 139, 1);
+  border: 0;
+  outline: none;
+}
+
+#buttonShareStyle:active {
+  width: 90%;
+  height: auto;
+  background-color: rgb(1, 26, 139);
+}
+
+.textShare {
+  margin-right: 0.5rem;
+}
+
+.logoOutline {
+  margin-left: 50px;
+  width: 40%;
+  height: auto;
+  position: absolute;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  animation: neon 3s alternate infinite ease-in-out;
+  --cor-neon: #fff333;
+}
+
+.logoText {
+  margin-left: 50px;
+  width: 40%;
+  height: auto;
+  position: absolute;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  animation: neon 3s alternate infinite ease-in-out;
+  --cor-neon: #fff333;
+}
+
+@media (min-width: 576px) {
+  .logo {
+    padding-top: 15px;
+  }
+  .logoOutline {
+    width: 25%;
+  }
+  .logoText {
+    width: 25%;
+  }
+}
+
+@keyframes neon {
+  from {
+    filter: drop-shadow(0 0 0 var(--cor-neon));
+  }
+  to {
+    filter: drop-shadow(0 0 30px var(--cor-neon));
+  }
+}

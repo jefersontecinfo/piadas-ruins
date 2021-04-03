@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 15vh;
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  max-width: 980px;
+  justify-content: center;
+  z-index: 10;
+}
+
+.container span {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  font-family: "Lobster";
+  color: white;
+  padding-bottom: 50px;
+}
+
+.buttonStyle {
+  background-color: darkgreen;
+  border: 0;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+  outline: 0;
+  margin-bottom: 3rem;
+}
+
+.buttonStyle:hover {
+  background-color: rgb(1, 139, 1);
+  border: 0;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+  outline: 0;
+}
